@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap");
+@import "./variables";
+@import "./header";
+@import "./title";
+@import "./timer";
+@import "./link";
+@import "./footer";
+@import "./popup";
+@import "./events";
+
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	position: relative;
+	background-image: url("../icons/bg-left.svg"), url("../icons/bg-right.svg");
+	background-repeat: no-repeat;
+	background-position: left top, right top;
+	background-size: 453px 418px, 232px 288px;
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.main {
+	padding-top: 93px;
+	padding-bottom: 76px;
+	flex: 1 1 auto;
+}
+
+@media (min-width: 769px) and (max-width: 1920px) {
+	body {
+		background-size: 23vw 418px, 232px 288px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		background-size: 246px 208px, 250px 240px;
+	}
+	.main {
+		padding-top: 166px;
+		padding-bottom: 169px;
+	}
+}
+
+@media (max-width: 455px) {
+	body {
+		background-size: 174px 142px, 153px 148px;
+	}
+	.main {
+		padding-top: 66px;
+		padding-bottom: 86px;
+	}
+}

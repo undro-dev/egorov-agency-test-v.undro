@@ -1,0 +1,61 @@
+.timer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 72px;
+}
+.timer-dots {
+	font-family: $main-font;
+	color: $blue;
+	font-size: 4.5rem;
+	font-weight: 600;
+	line-height: 100%;
+}
+.timer-item {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3px;
+	align-items: center;
+	&__numbers {
+		font-family: $main-font;
+		color: $blue;
+		font-size: 4.5rem;
+		font-weight: 600;
+		line-height: 100%;
+	}
+	&__values {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 132px;
+		height: 54px;
+		background: url("../icons/bg-timer.svg") 0 0 / contain no-repeat;
+
+		font-family: $main-font;
+		line-height: 100%;
+		font-weight: 400;
+		color: #ffffff;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.timer {
+		margin-bottom: 40px;
+	}
+
+	.timer-dots {
+		font-size: 2.25rem;
+	}
+	.timer-item {
+		row-gap: 6px;
+		&__numbers {
+			font-size: 2.25rem;
+		}
+		&__values {
+			width: 64px;
+			height: 40px;
+			background-size: 100% 100%;
+			font-size: 0.75rem;
+		}
+	}
+}
